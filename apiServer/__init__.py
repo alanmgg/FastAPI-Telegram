@@ -9,6 +9,13 @@ Assistant Pepe API supports the introduction of IOT technology in an elevator fo
 
 ## Base
 We will be able to know if the API is in operation or is stopped through various methods.
+
+## Elevator
+With the following routes you can:  
+☑️ Save date and time when **elevator** goes up.  
+☑️ Save date and time when **elevator** goes down.  
+☑️ Send document with **elevator** data.  
+☑️ Send message by **Telegram** of "invalid command".  
 """
 
 openapi_tags = [
@@ -25,7 +32,7 @@ openapi_tags = [
 app = FastAPI(
     title="Assistant Pepe API",
     description=description,
-    version="1.0.0",
+    version="1.0.1",
     openapi_tags=openapi_tags,
     license_info={
         "name": "MIT License",
