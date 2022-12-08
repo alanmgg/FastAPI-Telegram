@@ -1,0 +1,12 @@
+[Unit]
+Description=UvicornAPI for APP Service
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/startUvicorn.sh
+#ExecStop=/home/ubuntu/stopUvicorn.sh
+KillMode=mixed
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
